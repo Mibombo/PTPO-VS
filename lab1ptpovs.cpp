@@ -3,6 +3,11 @@
 #include <iterator>
 #include <limits>
 
+/// <summary>
+/// Removes non-alphabetic characters and converts all letters to lowercase.
+/// </summary>
+/// <param name="word">Input word to clean.</param>
+/// <returns>Cleaned word containing only alphabetic characters in lowercase.</returns>
 static std::string cleanWord(const std::string& word) {
     std::string result;
     for (char ch : word) {
@@ -12,6 +17,11 @@ static std::string cleanWord(const std::string& word) {
     return result;
 }
 
+/// <summary>
+/// Checks if a number is prime.
+/// </summary>
+/// <param name="n">Number to check.</param>
+/// <returns>true if number is prime, false otherwise.</returns>
 static bool isPrime(int n) {
     if (n < 2) return false;
     if (n == 2) return true;
